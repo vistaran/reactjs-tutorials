@@ -1,70 +1,25 @@
-# Getting Started with Create React App
+# Session 3 - Rendering in Reactjs 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Conditional rendering
 
-## Available Scripts
+conditional rendering is a technique that allows you to show or hide elements in the UI based on a condition. You can use conditional rendering to display different content to users based on their actions or the state of your application. There are several ways to do conditional rendering in React, but the most common approach is to use the ternary operator or the logical AND operator.
 
-In the project directory, you can run:
+## List rendering
 
-### `npm start`
+list rendering is a technique that allows you to render a list of items based on an array of data. You can use list rendering to display a dynamic list of elements, such as a list of blog posts, a collection of products, or a list of messages.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+To render a list in React, you can use the `map()` method to loop through the array of data and generate a new array of elements to render.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Lists and keys 
 
-### `npm test`
+When rendering a list of items using the `map()` method, it's important to provide a unique identifier for each item. This unique identifier is called a `key`.
+The key is used by React to keep track of which items have changed, been added or been removed from the list. When a new item is added or an item is removed, React will use the key to efficiently update the DOM by only adding or removing the changed elements.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Index as key anti-patterns
 
-### `npm run build`
+Using the index as a key for list items in React is considered an anti-pattern because it can lead to performance issues and can cause unexpected behavior when the order of the list items changes.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+To avoid these issues, it's best to use a unique identifier as the `key` for each list item, such as an ID or a name. This way, React can accurately track changes in the list and only re-render the elements that have actually changed. If the data source doesn't have a unique identifier, it is recommended to add one or generate one on the client-side.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
