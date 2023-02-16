@@ -2,11 +2,11 @@
 
 ## Conditional rendering
 
-conditional rendering is a technique that allows you to show or hide elements in the UI based on a condition. You can use conditional rendering to display different content to users based on their actions or the state of your application. There are several ways to do conditional rendering in React, but the most common approach is to use the ternary operator or the logical AND operator.
+Conditional rendering is a technique that allows you to show or hide elements in the UI based on a condition. You can use conditional rendering to display different content to users based on their actions or the state of your application. There are several ways to do conditional rendering in React, but the most common approach is to use the ternary operator or the logical AND operator.
 
 ## List rendering
 
-list rendering is a technique that allows you to render a list of items based on an array of data. You can use list rendering to display a dynamic list of elements, such as a list of blog posts, a collection of products, or a list of messages.
+List rendering is a technique that allows you to render a list of items based on an array of data. You can use list rendering to display a dynamic list of elements, such as a list of blog posts, a collection of products, or a list of messages.
 
 To render a list in React, you can use the `map()` method to loop through the array of data and generate a new array of elements to render.
 
